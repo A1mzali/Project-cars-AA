@@ -1,5 +1,6 @@
 @import './reset.css';
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;700&family=Poppins:wght@600&display=swap');
+@import './btn.css';
 
 /* font-family: 'Inter', sans-serif; */
 
@@ -8,6 +9,7 @@
 }
 
 html, body{
+  height: 100%;
   color: #FFFFFF;
   flex-direction: column;
 
@@ -19,6 +21,12 @@ html, body{
 
 a{
   color: #FFFFFF;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -67,25 +75,65 @@ a{
 }
 
 
+/* Main */
+
+.main{
+  flex-grow: 1;
+}
+
+/* Top */
+
+.top{
+  text-align: center;
+  color: #fff;
+  padding-top: 105px;
+  padding-bottom: 50px;
+}
+
+.title{
+  padding-bottom: 40px;
+  font-size: 96px;
+  font-weight: 700;
+}
+
+.top__link{
+  display: inline-block;
+  max-width: 430px;
+  width: 100%;
+  background-color: #151515;
+  padding: 23px;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* Slider */
+
+.swiper-wrapper{
+
+  
+}
+.swiper-slide{
+  height: 100vh;
+
+}
+
 
 /* Footer */
 .footer{
   background-color: #151515;
   padding: 50px 0 32px;
-  color: #fff;
-  
+  color: #fff; 
 }
 
 .footer__menu{
   display: flex;
   justify-content: space-around;
   margin-bottom: 50px;
-  align-items: center;
 }
 
 .footer__menu-list{
-  display: grid;
-	grid-template: 12px;
+  max-width: 250px;  
 }
 
 .footer__menu-title{
@@ -98,9 +146,7 @@ a{
  padding-top: 20px;
 }
 
-
 /* App */
-
 .app{
   display: flex;
   justify-content: center;
@@ -125,6 +171,3 @@ a{
   gap: 40px;
 }
 
-.copy__nav-link{
-
-}
